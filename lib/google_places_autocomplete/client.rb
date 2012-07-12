@@ -19,6 +19,7 @@ module GooglePlacesAutocomplete
       radius = options.delete(:radius) || nil
       lat = options.delete(:lat) || nil
       lng = options.delete(:lng) || nil
+      components = options.delete(:components) || nil
       location = [lat,lng].join(',') if lat && lng
       sw_bounds = [options[:sw_bounds].delete(:lat),options[:sw_bounds].delete(:lng)].join(',') if options[:sw_bounds] && options[:sw_bounds][:lat] && options[:sw_bounds][:lng]
       ne_bounds = [options[:ne_bounds].delete(:lat),options[:ne_bounds].delete(:lng)].join(',') if options[:ne_bounds] && options[:ne_bounds][:lat] && options[:ne_bounds][:lng]
