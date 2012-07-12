@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "google_places_autocomplete_fork/version"
+require "google_places_autocomplete/version"
 
 Gem::Specification.new do |s|
   s.name        = "google_places_autocomplete_fork"
