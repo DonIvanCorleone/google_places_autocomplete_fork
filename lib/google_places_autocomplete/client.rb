@@ -43,6 +43,9 @@ module GooglePlacesAutocomplete
       end
       
       options = options.delete_if {|key, value| value.nil?}
+      
+      puts options.merge(self.default_options)
+      
       mashup(self.class.get("/json", :query => options.merge(self.default_options)))
     end
     
